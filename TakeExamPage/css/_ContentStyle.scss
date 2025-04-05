@@ -1,0 +1,134 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, transparent, #669bbc);
+}
+.content {
+  width: 100%;
+  height: 90vh;
+  .bar-side {
+    border-radius: 0px 0px 10px 0px;
+    display: none;
+    position: fixed;
+    width: 250px;
+    height: 90%;
+    background-color: black;
+    color: white;
+    ul {
+      width: 100%;
+      height: 100%;
+      li {
+        width: 100%;
+        list-style: none;
+        &:first-child {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          h2 {
+            text-transform: capitalize;
+          }
+        }
+        .imge-info {
+          width: 80px;
+          height: 80px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+        }
+        a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none;
+          color: white;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-top: 30px;
+          padding: 10px 0;
+          border-radius: 20px;
+          gap: 100px;
+          transition: background-color 0.2s linear;
+          &:hover {
+            background-color: rgba(255, 1, 1, 0.445);
+          }
+          span {
+            text-transform: capitalize;
+          }
+          i {
+            text-align: center;
+            width: 50px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .StartExam {
+    width: 100%;
+    height: 100%;
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      padding: 10px 0;
+      text-transform: capitalize;
+      color: rgb(0, 0, 0);
+      margin-bottom: 10px;
+    }
+    form {
+      overflow-y: auto;
+      width: 80%;
+      padding: 10px;
+      max-height: 90%;
+      margin: auto;
+      border-radius: 10px;
+      background-color: rgba(6, 12, 82, 0.05);
+      .qution {
+        p {
+          text-transform: capitalize;
+          font-size: 20px;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+        div {
+          margin-bottom: 5px;
+        }
+      }
+      .btns {
+        text-align: center;
+        button {
+          padding: 10px 20px;
+          border: none;
+          outline: none;
+          border-radius: 20px;
+          color: rgb(0, 0, 0);
+          font-size: 20px;
+          font-weight: bold;
+          text-transform: capitalize;
+          background-color: transparent;
+          border: 2px solid rgb(0, 255, 98);
+          cursor: pointer;
+          transition: background-color 0.2s linear;
+          &:hover {
+            background-color: rgb(0, 255, 98);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .content {
+    .StartExam {
+      form {
+        .btns {
+          button {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

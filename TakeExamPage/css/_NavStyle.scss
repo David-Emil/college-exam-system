@@ -1,0 +1,48 @@
+.nav-header {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    a {
+      text-transform: capitalize;
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+      font-size: 30px;
+      border: 2px solid red;
+      padding: 10px;
+      border-radius: 30px;
+      transition: background-color 0.2s linear;
+      &:hover {
+        background-color: red;
+      }
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      color: white;
+      p {
+        font-size: 25px;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      i {
+        cursor: pointer;
+        font-size: 25px;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .nav-header {
+      padding: 10px 0px;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+  
