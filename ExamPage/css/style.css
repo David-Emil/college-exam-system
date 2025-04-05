@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent, #669bbc);
+}
+
+.nav-header {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.nav-header a {
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 30px;
+  transition: background-color 0.2s linear;
+}
+.nav-header a:hover {
+  background-color: red;
+}
+.nav-header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+.nav-header .logo p {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.nav-header .logo i {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+@media (max-width: 500px) {
+  .nav-header {
+    padding: 10px 0px;
+  }
+  .nav-header a {
+    font-size: 20px;
+  }
+}
+.content {
+  width: 100%;
+  height: 85%;
+}
+.content .bar-side {
+  border-radius: 0px 0px 10px 0px;
+  display: none;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+.content .bar-side ul {
+  width: 100%;
+  height: 100%;
+}
+.content .bar-side ul li {
+  width: 100%;
+  list-style: none;
+}
+.content .bar-side ul li:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .bar-side ul li:first-child h2 {
+  text-transform: capitalize;
+}
+.content .bar-side ul li .imge-info {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.content .bar-side ul li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 0;
+  border-radius: 20px;
+  gap: 100px;
+  transition: background-color 0.2s linear;
+}
+.content .bar-side ul li a:hover {
+  background-color: rgba(255, 1, 1, 0.445);
+}
+.content .bar-side ul li a span {
+  text-transform: capitalize;
+}
+.content .bar-side ul li a i {
+  text-align: center;
+  width: 50px;
+  font-size: 30px;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.main-content .header {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding: 10px 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.main-content .total-student {
+  width: 100%;
+  padding: 0px 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.main-content .total-student table {
+  width: 100%;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  border-spacing: 0px;
+}
+.main-content .total-student table thead {
+  color: white;
+}
+.main-content .total-student table thead tr {
+  background-color: rgb(0, 0, 0);
+}
+.main-content .total-student table thead tr th {
+  padding: 10px;
+}
+.main-content .total-student table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.main-content .total-student table tbody tr td {
+  padding: 10px;
+}
+.main-content .total-student table tbody tr td a {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #ff0000;
+  width: 100px;
+  padding: 10px;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.2s linear;
+}
+.main-content .total-student table tbody tr td a:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .main-content .header {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .main-content .total-student {
+    padding: 0px 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
