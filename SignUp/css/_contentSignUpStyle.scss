@@ -1,0 +1,24 @@
+%contentSignUp {
+  padding: 10px;
+  width: 50%;
+  height: 80%;
+  background-color: #003049;
+  border-radius: 40px;
+  // background-color: red;
+}
+@media (max-width: 900px) {
+  .container {
+    .contentSignUp {
+      width: 70%;
+      //   background-color: red;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    .contentSignUp {
+      width: 90%;
+      //   background-color: red;
+    }
+  }
+}

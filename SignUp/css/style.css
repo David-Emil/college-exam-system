@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container .contentSignUp {
+  padding: 10px;
+  width: 50%;
+  height: 80%;
+  background-color: #003049;
+  border-radius: 40px;
+}
+
+@media (max-width: 900px) {
+  .container .contentSignUp {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .container .contentSignUp {
+    width: 90%;
+  }
+}
+.container .contentSignUp .body {
+  width: 100%;
+  height: 80%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent, #669bbc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .contentSignUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .contentSignUp .header {
+  width: 100%;
+}
+.container .contentSignUp .header .header {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+.container .contentSignUp .header .title {
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+}
+.container .contentSignUp .body form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .contentSignUp .body form div {
+  width: 100%;
+  position: relative;
+}
+.container .contentSignUp .body form div i {
+  display: none;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.container .contentSignUp .body form input,
+.container .contentSignUp .body form select {
+  font-weight: 600;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #7bc5f3;
+  transition: border 0.2s linear, box-shadow 0.2s linear, transform 0.2s linear;
+}
+.container .contentSignUp .body form input:focus,
+.container .contentSignUp .body form select:focus {
+  border: 2px solid green;
+  box-shadow: 0 0 10px 0px green;
+  transform: scale(1.02);
+}
+.container .contentSignUp .body form .role {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.container .contentSignUp .body form .role label {
+  font-size: 20px;
+  width: 70px;
+  color: white;
+}
+.container .contentSignUp .body form .btns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .contentSignUp .body form .btns .signIn {
+  background-color: transparent;
+}
+.container .contentSignUp .body form .btns .a,
+.container .contentSignUp .body form .btns .signIn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  width: 150px;
+  border: 2px solid #39af7e;
+  transition: all 0.2s linear;
+}
+.container .contentSignUp .body form .btns .a.signIn:hover,
+.container .contentSignUp .body form .btns .signIn.signIn:hover {
+  background-color: #669bbc;
+}
+.container .contentSignUp .body form .btns .a.submit:hover,
+.container .contentSignUp .body form .btns .signIn.submit:hover {
+  background-color: #39af7e;
+}
+
+@media (max-width: 350px) {
+  form .role {
+    flex-direction: column;
+  }
+  form .role label {
+    margin-bottom: 10px;
+    align-self: self-start;
+  }
+  form .btns {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

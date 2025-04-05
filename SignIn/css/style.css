@@ -1,0 +1,131 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, transparent, #669bbc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+.content {
+  padding: 20px;
+  width: 50%;
+  height: 80vh;
+  background-color: #003049;
+  border-radius: 40px;
+}
+.content .header {
+  text-align: center;
+}
+.content .header p {
+  color: white;
+}
+.content .header .text-header {
+  font-size: 35px;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+.content .header .text-title {
+  margin: 10px 0;
+  color: rgba(255, 255, 255, 0.493);
+  text-transform: capitalize;
+}
+.content .body {
+  width: 100%;
+  height: 80%;
+}
+.content .body .text-titleError {
+  color: red;
+  text-transform: capitalize;
+  text-align: center;
+}
+.content .body form {
+  margin-top: 100px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.content .body form .div-password {
+  position: relative;
+  width: 100%;
+}
+.content .body form .div-password i {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.content .body form input {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #7bc5f3;
+  font-weight: bold;
+  transition: border 0.2s linear, box-shadow 0.2s linear, transform 0.2s linear;
+}
+.content .body form input:focus {
+  border: 2px solid green;
+  box-shadow: 0 0 10px 0px green;
+  transform: scale(1.02);
+}
+.content .body form .btns {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.content .body form .btns .a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border: 2px solid #39af7e;
+  width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: background-color 0.2s linear;
+}
+.content .body form .btns .a.signIn:hover {
+  background-color: #669bbc;
+}
+.content .body form .btns .a.submit:hover {
+  background-color: #39af7e;
+}
+
+@media (max-width: 700px) {
+  .content {
+    width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  .content .body form .div-password i {
+    top: 30px;
+  }
+  .content .body form input {
+    margin-top: 20px;
+  }
+  .content .body form .btns {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
