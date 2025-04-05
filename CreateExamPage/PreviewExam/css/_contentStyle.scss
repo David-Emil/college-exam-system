@@ -1,0 +1,331 @@
+.content {
+  width: 100%;
+  height: 91.4vh;
+  position: relative;
+  // .edit {
+  //   display: block;
+  // }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    form {
+      i {
+        position: absolute;
+        right: -20px;
+        top: 20px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+      }
+      position: relative;
+      padding: 10px;
+      margin: auto;
+      width: 70%;
+      .btns {
+        button {
+          border: none;
+          outline: none;
+          padding: 10px;
+          cursor: pointer;
+          background-color: rgb(55, 124, 214);
+          color: white;
+          text-transform: capitalize;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      & > div {
+        input,
+        select {
+          border: none;
+          outline: none;
+          margin: 5px 0;
+          padding: 10px;
+          border-bottom: 4px solid rgb(21, 194, 99);
+        }
+        label {
+          color: white;
+          text-transform: capitalize;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      h2 {
+        text-align: center;
+        text-transform: capitalize;
+        padding: 10px;
+        color: white;
+      }
+    }
+  }
+  .overlay-edit {
+    display: none;
+  }
+  .bar-side {
+    border-radius: 0px 0px 10px 0px;
+    display: none;
+    position: fixed;
+    width: 250px;
+    height: 90%;
+    background-color: black;
+    color: white;
+    ul {
+      width: 100%;
+      height: 100%;
+      li {
+        width: 100%;
+        list-style: none;
+        &:first-child {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          h2 {
+            text-transform: capitalize;
+          }
+        }
+        .imge-info {
+          width: 80px;
+          height: 80px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+        }
+        a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none;
+          color: white;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-top: 30px;
+          padding: 10px 0;
+          border-radius: 20px;
+          gap: 100px;
+          transition: background-color 0.2s linear;
+          &:hover {
+            background-color: rgba(255, 1, 1, 0.445);
+          }
+          span {
+            text-transform: capitalize;
+          }
+          i {
+            text-align: center;
+            width: 50px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .btns-addQuationAndsubmit {
+    padding: 30px;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    button,
+    a {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      width: 200px;
+      text-decoration: none;
+      text-transform: capitalize;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border: 2px solid rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 30px;
+      transition: background-color 0.2s linear;
+      color: rgb(255, 255, 255);
+    }
+  }
+  .container {
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    .header {
+      width: 100%;
+      h2 {
+        text-align: center;
+        text-transform: capitalize;
+        padding: 10px;
+      }
+    }
+    .bodyAllQuation {
+      // width: 100%;
+      // height: 95%;
+      // overflow-y: auto;
+      // display: flex;
+      // flex-wrap: wrap;
+      // padding: 10px;
+      // gap: 20px;
+      // ===============
+      width: 100%;
+      height: 95%;
+      overflow-y: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      // flex-direction: row;
+      padding: 10px;
+      gap: 20px;
+      .quationBody {
+        width: 400px;
+        flex-grow: 1;
+        box-shadow: 0 0 10px 0px rgb(0, 0, 0);
+        border-radius: 10px;
+        p {
+          text-align: center;
+          text-transform: capitalize;
+          font-size: 20px;
+          padding: 10px;
+        }
+        div {
+          padding: 10px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          span {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 18px;
+          }
+        }
+        .btns {
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          // background-color: rgb(122, 95, 95);
+          button {
+            padding: 10px;
+            border-radius: 30px;
+            width: 150px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            // color: white;
+            text-transform: capitalize;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s linear;
+            &.delete {
+              &:hover {
+                background-color: rgb(255, 0, 0);
+                color: white;
+              }
+              border: 2px solid rgb(255, 0, 0);
+              // background-color: rgb(255, 0, 0);
+            }
+            &.edit {
+              &:hover {
+                background-color: rgb(28, 99, 28);
+                color: white;
+              }
+              border: 2px solid rgb(28, 99, 28);
+              // background-color: rgb(0, 255, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .content {
+    .btns-addQuationAndsubmit {
+      gap: 5px;
+      button,
+      a {
+        font-size: 13px;
+      }
+    }
+    .container {
+      width: 90%;
+    }
+    .container {
+      .bodyAllQuation {
+        .quationBody {
+          .btns {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+.question-row {
+  display: flex;
+  justify-content: space-between;
+  /* Adds space between questions */
+  margin-bottom: 20px;
+  /* Adds spacing between rows */
+}
+
+.question-card {
+  flex: 0 0 48%;
+  /* Each card takes ~48% of the row width */
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.answer {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.btns {
+  margin-top: 10px;
+}
+
+.btns button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btns .delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.btns .edit {
+  background-color: #4caf50;
+  color: white;
+}

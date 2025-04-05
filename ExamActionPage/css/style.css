@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.nav-header {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.nav-header a {
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 30px;
+  transition: background-color 0.2s linear;
+}
+.nav-header a:hover {
+  background-color: red;
+}
+.nav-header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+.nav-header .logo p {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.nav-header .logo i {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+@media (max-width: 500px) {
+  .nav-header {
+    padding: 10px 0px;
+  }
+  .nav-header a {
+    font-size: 20px;
+  }
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, transparent, #669bbc);
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: 90vh;
+}
+.content .bar-side {
+  border-radius: 0px 0px 10px 0px;
+  display: none;
+  position: fixed;
+  width: 250px;
+  height: 90%;
+  background-color: black;
+  color: white;
+}
+.content .bar-side ul {
+  width: 100%;
+  height: 100%;
+}
+.content .bar-side ul li {
+  width: 100%;
+  list-style: none;
+}
+.content .bar-side ul li:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .bar-side ul li:first-child h2 {
+  text-transform: capitalize;
+}
+.content .bar-side ul li .imge-info {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.content .bar-side ul li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 0;
+  border-radius: 20px;
+  gap: 100px;
+  transition: background-color 0.2s linear;
+}
+.content .bar-side ul li a:hover {
+  background-color: rgba(255, 1, 1, 0.445);
+}
+.content .bar-side ul li a span {
+  text-transform: capitalize;
+}
+.content .bar-side ul li a i {
+  text-align: center;
+  width: 50px;
+  font-size: 30px;
+}
+.content .main-content {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+.content .main-content a {
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  flex-grow: 1;
+  border-radius: 20px;
+}
+.content .main-content a > div {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.content .main-content a > a.creatExam {
+  background-color: #1c6960;
+  transition: background-color 0.2s linear;
+}
+.content .main-content a > a.creatExam:hover {
+  background-color: #134640;
+}
+.content .main-content a > div.takeExam {
+  background-color: #c76046;
+  transition: background-color 0.2s linear;
+}
+.content .main-content a > div.takeExam:hover {
+  background-color: #7e3825;
+}
+.content .main-content a > div p {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.content .main-content a > div div {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.content .main-content a > div div i {
+  font-size: 30px;
+}
+.content .main-content a > div div span {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.content .main-content .registExam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.content .main-content .registExam form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.801);
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 5px;
+  border-radius: 20px;
+}
+.content .main-content .registExam form i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+.content .main-content .registExam form input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  border: 2px solid #00924e;
+  transition: box-shadow 0.2s linear;
+}
+.content .main-content .registExam form input:focus {
+  box-shadow: 0 0 10px 0 #00924e;
+}
+.content .main-content .registExam form label {
+  display: inline-block;
+  widows: 100%;
+  align-self: flex-start;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.content .main-content .registExam form button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #00924e;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  text-transform: capitalize;
+  transition: background-color 0.2s linear;
+  font-size: 20px;
+}
+.content .main-content .registExam form button:hover {
+  background-color: #00924e;
+}/*# sourceMappingURL=style.css.map */

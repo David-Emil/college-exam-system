@@ -1,0 +1,158 @@
+.content {
+  width: 100%;
+  height: 90vh;
+  .bar-side {
+    border-radius: 0px 0px 10px 0px;
+    display: none;
+    position: fixed;
+    width: 250px;
+    height: 90%;
+    background-color: black;
+    color: white;
+    ul {
+      width: 100%;
+      height: 100%;
+      li {
+        width: 100%;
+        list-style: none;
+        &:first-child {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          h2 {
+            text-transform: capitalize;
+          }
+        }
+        .imge-info {
+          width: 80px;
+          height: 80px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+        }
+        a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none;
+          color: white;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-top: 30px;
+          padding: 10px 0;
+          border-radius: 20px;
+          gap: 100px;
+          transition: background-color 0.2s linear;
+          &:hover {
+            background-color: rgba(255, 1, 1, 0.445);
+          }
+          span {
+            text-transform: capitalize;
+          }
+          i {
+            text-align: center;
+            width: 50px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  //   display: flex;
+  //       flex-direction: row;
+  .man-content {
+    width: 100%;
+    height: 100%;
+    // background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .exam-time {
+      width: 100%;
+      //   background-color: red;
+      .inputForTime {
+        width: 100%;
+        // height: 100%;
+        // background-color: yellow;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        input {
+          min-width: 1px;
+          flex-grow: 1;
+        }
+        // align-items: center;
+        // justify-content: center;
+      }
+    }
+    form {
+      padding: 10px;
+      margin: auto;
+      width: 70%;
+      //   height: 90%;
+      border-radius: 10px;
+      background-image: linear-gradient(
+        to right,
+        white,
+        rgba(0, 89, 255, 0.37)
+      );
+      overflow-y: auto;
+      & > div {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        button {
+          border: none;
+          width: 150px;
+          margin: auto;
+          background-color: transparent;
+          color: black;
+          text-transform: capitalize;
+          font-weight: bold;
+          border: 2px solid rgb(26, 128, 43);
+          padding: 10px;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: background-color 0.2s linear;
+          &:hover {
+            background-color: rgb(26, 128, 43);
+            color: white;
+          }
+        }
+        p {
+          text-transform: capitalize;
+          margin: 10px 0;
+        }
+        input,
+        select {
+          padding: 10px;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          border: 2px solid rgb(26, 128, 43);
+        }
+      }
+      h2 {
+        font-weight: bold;
+        // background-color: antiquewhite;
+        text-align: center;
+        padding: 10px 0;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .content {
+    form {
+      h2 {
+        font-size: 15px;
+
+        // background-color: red;
+      }
+      width: 80%;
+    }
+  }
+}
